@@ -9,7 +9,9 @@
 
 <h1 align="center">NextChat</h1>
 
-English / [简体中文](./README_CN.md)
+English / [简体中文](./README_CN.md) / [日本語](./README_JA.md)
+
+One-click to get a well-designed cross-platform ChatGPT web UI, with GPT3, GPT4 & Gemini Pro support.
 
 <a href="https://trendshift.io/repositories/5973" target="_blank"><img src="https://trendshift.io/api/badge/repositories/5973" alt="ChatGPTNextWeb%2FChatGPT-Next-Web | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
@@ -34,7 +36,7 @@ English / [简体中文](./README_CN.md)
 [MacOS-image]: https://img.shields.io/badge/-MacOS-black?logo=apple
 [Linux-image]: https://img.shields.io/badge/-Linux-333?logo=ubuntu
 
-[<img src="https://zeabur.com/button.svg" alt="Deploy on Zeabur" height="30">](https://zeabur.com/templates/ZBUEFA) [<img src="https://vercel.com/button" alt="Deploy on Vercel" height="30">](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FChatGPTNextWeb%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=nextchat&repository-name=NextChat)  [<img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod" height="30">](https://gitpod.io/#https://github.com/ChatGPTNextWeb/NextChat) 
+[<img src="https://vercel.com/button" alt="Deploy with Vercel" height="30">](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FChatGPTNextWeb%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=nextchat&repository-name=NextChat) [<img src="https://zeabur.com/button.svg" alt="Deploy on Zeabur" height="30">](https://zeabur.com/templates/ZBUEFA) [<img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod" height="30">](https://gitpod.io/#https://github.com/ChatGPTNextWeb/NextChat)
 
 [<img src="https://github.com/user-attachments/assets/903482d4-3e87-4134-9af1-f2588fa90659" height="50" width="" >](https://monica.im/?utm=nxcrp)
 
@@ -77,12 +79,12 @@ For enterprise inquiries, please contact: **business@nextchat.dev**
 ## Features
 
 - **Deploy for free with one-click** on Vercel in under 1 minute
-- Compact client (~5MB) on Linux/Windows/MacOS, [download it now](https://github.com/Yidadaa/ChatGPT-Next-Web/releases)
+- Compact client (~5MB) on Linux/Windows/macOS, [download it now](https://github.com/Yidadaa/ChatGPT-Next-Web/releases)
 - Fully compatible with self-deployed LLMs, recommended for use with [RWKV-Runner](https://github.com/josStorer/RWKV-Runner) or [LocalAI](https://github.com/go-skynet/LocalAI)
 - Privacy first, all data is stored locally in the browser
-- Markdown support: LaTex, mermaid, code highlight, etc.
+- Markdown support: LaTeX, mermaid, code highlight, etc.
 - Responsive design, dark mode and PWA
-- Fast first screen loading speed (~100kb), support streaming response
+- Fast first screen loading speed (~100kb), supports streaming response
 - New in v2: create, share and debug your chat tools with prompt templates (mask)
 - Awesome prompts powered by [awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh) and [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
 - Automatically compresses chat history to support long conversations while also saving your tokens
@@ -121,10 +123,11 @@ For enterprise inquiries, please contact: **business@nextchat.dev**
 
 ## Get Started
 
-1. Get [OpenAI API Key](https://platform.openai.com/account/api-keys);
-2. Click
-   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web), remember that `CODE` is your page password;
-3. Enjoy :)
+> [简体中文 > 如何开始使用](./README_CN.md#开始使用)
+
+1. Get your [OpenAI API Key](https://platform.openai.com/account/api-keys)
+2. Click [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web) to deploy (remember that `CODE` is your page password)
+3. Enjoy! 🎉
 
 ## FAQ
 
@@ -132,19 +135,21 @@ For enterprise inquiries, please contact: **business@nextchat.dev**
 
 ## Keep Updated
 
+> [简体中文 > 如何保持代码更新](./README_CN.md#保持更新)
+
 If you have deployed your own project with just one click following the steps above, you may encounter the issue of "Updates Available" constantly showing up. This is because Vercel will create a new project for you by default instead of forking this project, resulting in the inability to detect updates correctly.
 
 We recommend that you follow the steps below to re-deploy:
 
-- Delete the original repository;
-- Use the fork button in the upper right corner of the page to fork this project;
-- Choose and deploy in Vercel again, [please see the detailed tutorial](./docs/vercel-cn.md).
+1. Delete the original repository
+2. Use the fork button in the upper right corner of the page to fork this project
+3. Choose and deploy in Vercel again ([see the detailed tutorial](./docs/vercel-cn.md))
 
 ### Enable Automatic Updates
 
 > If you encounter a failure of Upstream Sync execution, please [manually update code](./README.md#manually-updating-code).
 
-After forking the project, due to the limitations imposed by GitHub, you need to manually enable Workflows and Upstream Sync Action on the Actions page of the forked project. Once enabled, automatic updates will be scheduled every hour:
+After forking the project, due to GitHub's limitations, you need to manually enable Workflows and Upstream Sync Action on the Actions page of your forked project. Once enabled, automatic updates will be scheduled every hour:
 
 ![Automatic Updates](./docs/images/enable-actions.jpg)
 
@@ -154,13 +159,13 @@ After forking the project, due to the limitations imposed by GitHub, you need to
 
 If you want to update instantly, you can check out the [GitHub documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) to learn how to synchronize a forked project with upstream code.
 
-You can star or watch this project or follow author to get release notifications in time.
+You can star or watch this project or follow the author to get release notifications in time.
 
 ## Access Password
 
 This project provides limited access control. Please add an environment variable named `CODE` on the vercel environment variables page. The value should be passwords separated by comma like this:
 
-```
+```env
 code1,code2,code3
 ```
 
@@ -372,7 +377,7 @@ NodeJS >= 18, Docker >= 20
 
 Before starting development, you must create a new `.env.local` file at project root, and place your api key into it:
 
-```
+```env
 OPENAI_API_KEY=<your api key here>
 
 # if you are not able to access openai service, use this BASE_URL
@@ -381,7 +386,7 @@ BASE_URL=https://chatgpt1.nextweb.fun/api/proxy
 
 ### Local Development
 
-```shell
+```bash
 # 1. install nodejs and yarn first
 # 2. config local env vars in `.env.local`
 # 3. run
@@ -394,7 +399,7 @@ yarn dev
 
 ### Docker (Recommended)
 
-```shell
+```bash
 docker pull yidadaa/chatgpt-next-web
 
 docker run -d -p 3000:3000 \
@@ -405,7 +410,7 @@ docker run -d -p 3000:3000 \
 
 You can start service behind a proxy:
 
-```shell
+```bash
 docker run -d -p 3000:3000 \
    -e OPENAI_API_KEY=sk-xxxx \
    -e CODE=your-password \
@@ -415,7 +420,7 @@ docker run -d -p 3000:3000 \
 
 If your proxy needs password, use:
 
-```shell
+```bash
 -e PROXY_URL="http://127.0.0.1:7890 user pass"
 ```
 
@@ -431,7 +436,7 @@ docker run -d -p 3000:3000 \
 
 ### Shell
 
-```shell
+```bash
 bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/scripts/setup.sh)
 ```
 
@@ -441,10 +446,10 @@ bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/s
 
 ## Documentation
 
-> Please go to the [docs][./docs] directory for more documentation instructions.
+> Please go to the [docs](./docs) directory for more documentation instructions.
 
 - [Deploy with cloudflare (Deprecated)](./docs/cloudflare-pages-en.md)
-- [Frequent Ask Questions](./docs/faq-en.md)
+- [Frequently Asked Questions](./docs/faq-en.md)
 - [How to add a new translation](./docs/translation.md)
 - [How to use Vercel (No English)](./docs/vercel-cn.md)
 - [User Manual (Only Chinese, WIP)](./docs/user-manual-cn.md)
